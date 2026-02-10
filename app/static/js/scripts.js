@@ -1,8 +1,3 @@
-/* ============================================
-   GENERAL SCRIPTS — scripts.js
-   Navigation & UI only (no AJAX / backend calls)
-   ============================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------- Sidebar Toggle ---------- */

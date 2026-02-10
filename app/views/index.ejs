@@ -2,7 +2,7 @@
 
 <div class="page-header">
     <h1 class="page-title"><i class="bi bi-speedometer2"></i> Dashboard</h1>
-    <p class="page-subtitle">Real-time system performance overview</p>
+    <p class="page-subtitle">Real-time system performance overview for</p>
 </div>
 
 <div class="cards-container">
@@ -59,7 +59,7 @@
             <h5 class="metric-card-title">Uptime</h5>
         </div>
         <div class="metric-card-body">
-            <span id="uptime-value" class="metric-value">--</span>
+            <span id="uptime-value" class="metric-value"><%= typeof uptime_str !== 'undefined' ? uptime_str : 'Uptime unavailable' %></span>
         </div>
         <div class="metric-card-footer">
             <small class="text-muted">System running time</small>
@@ -73,7 +73,9 @@
             <h5 class="metric-card-title">Operating System</h5>
         </div>
         <div class="metric-card-body">
-            <span id="os-value" class="metric-value metric-value-sm">--</span>
+            <span id="os-value" class="metric-value metric-value-sm">
+                <%= typeof system_name !== 'undefined' ? system_name : 'System name unrecognized' %>
+            </span>
         </div>
         <div class="metric-card-footer">
             <small id="os-detail" class="text-muted">Platform info</small>
@@ -87,7 +89,7 @@
             <h5 class="metric-card-title">Network</h5>
         </div>
         <div class="metric-card-body">
-            <span id="network-value" class="metric-value metric-value-sm">--</span>
+            <span id="network-value" class="metric-value metric-value-sm"><%= typeof sys_ip !== 'undefined' ? sys_ip : 'IP not found' %></span>
         </div>
         <div class="metric-card-footer">
             <small id="network-detail" class="text-muted">Active interface</small>
