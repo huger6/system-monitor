@@ -1,0 +1,99 @@
+<%- include('partials/header') %>
+
+<div class="page-header">
+    <h1 class="page-title"><i class="bi bi-speedometer2"></i> Dashboard</h1>
+    <p class="page-subtitle">Real-time system performance overview</p>
+</div>
+
+<div class="cards-container">
+
+    <!-- CPU Usage Card -->
+    <div class="metric-card" id="card-cpu">
+        <div class="metric-card-header">
+            <i class="bi bi-cpu"></i>
+            <h5 class="metric-card-title">CPU Usage</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="cpu-value" class="metric-value">--</span>
+            <span class="metric-unit">%</span>
+        </div>
+        <div class="metric-card-footer">
+            <small class="text-muted">Processor load</small>
+        </div>
+    </div>
+
+    <!-- RAM Usage Card -->
+    <div class="metric-card" id="card-ram">
+        <div class="metric-card-header">
+            <i class="bi bi-memory"></i>
+            <h5 class="metric-card-title">RAM Usage</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="ram-value" class="metric-value">--</span>
+            <span class="metric-unit">%</span>
+        </div>
+        <div class="metric-card-footer">
+            <small id="ram-detail" class="text-muted">Memory consumption</small>
+        </div>
+    </div>
+
+    <!-- Disk Usage Card -->
+    <div class="metric-card" id="card-disk">
+        <div class="metric-card-header">
+            <i class="bi bi-device-hdd"></i>
+            <h5 class="metric-card-title">Disk Usage</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="disk-value" class="metric-value">--</span>
+            <span class="metric-unit">%</span>
+        </div>
+        <div class="metric-card-footer">
+            <small id="disk-detail" class="text-muted">Storage capacity</small>
+        </div>
+    </div>
+
+    <!-- Uptime Card -->
+    <div class="metric-card" id="card-uptime">
+        <div class="metric-card-header">
+            <i class="bi bi-clock-history"></i>
+            <h5 class="metric-card-title">Uptime</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="uptime-value" class="metric-value">--</span>
+        </div>
+        <div class="metric-card-footer">
+            <small class="text-muted">System running time</small>
+        </div>
+    </div>
+
+    <!-- OS Info Card -->
+    <div class="metric-card" id="card-os">
+        <div class="metric-card-header">
+            <i class="bi bi-pc-display"></i>
+            <h5 class="metric-card-title">Operating System</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="os-value" class="metric-value metric-value-sm">--</span>
+        </div>
+        <div class="metric-card-footer">
+            <small id="os-detail" class="text-muted">Platform info</small>
+        </div>
+    </div>
+
+    <!-- Network Card -->
+    <div class="metric-card" id="card-network">
+        <div class="metric-card-header">
+            <i class="bi bi-wifi"></i>
+            <h5 class="metric-card-title">Network</h5>
+        </div>
+        <div class="metric-card-body">
+            <span id="network-value" class="metric-value metric-value-sm">--</span>
+        </div>
+        <div class="metric-card-footer">
+            <small id="network-detail" class="text-muted">Active interface</small>
+        </div>
+    </div>
+
+</div>
+
+<%- include('partials/footer') %>

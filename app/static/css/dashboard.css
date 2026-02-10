@@ -1,0 +1,83 @@
+/* ============================================
+   DASHBOARD — dashboard.css
+   ============================================ */
+
+/* ---------- Cards Container ---------- */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* ---------- Metric Card ---------- */
+.metric-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 220px;
+    flex: 1 1 260px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition-speed);
+}
+
+.metric-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Card Header */
+.metric-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.metric-card-header i {
+    font-size: 1.3rem;
+    color: var(--sidebar-accent);
+}
+
+.metric-card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Card Body */
+.metric-card-body {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.metric-value-sm {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.metric-unit {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+/* Card Footer */
+.metric-card-footer {
+    margin-top: auto;
+}
+
+.metric-card-footer small {
+    font-size: 0.8rem;
+}

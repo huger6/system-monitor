@@ -1,0 +1,13 @@
+        <footer class="app-footer">
+            <p>&copy; <%= new Date().getFullYear() %> System Monitor. Made by <a href="https://github.com/huger6" target="_blank" class="huger6">huger6</a></p>
+        </footer>
+    </main>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- General scripts -->
+    <script src="/js/scripts.js"></script>
+    <!-- Specific scripts -->
+    <%- typeof js_block !== 'undefined' ? js_block : '' %>
+</body>
+</html>
